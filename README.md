@@ -1,210 +1,149 @@
-/* Folder structure suggestion for a Personal Portfolio Website project: 
+```markdown
+<h1 align="center">Personal Portfolio Website</h1>
 
-personal-portfolio/
-  |- public/
-      |- index.html (Main landing page)
-  |- src/
-      |- css/
-          |- styles.css (Custom styles for the portfolio)
-      |- js/
-          |- app.js (JavaScript for interactive functionality)
-  |- assets/
-      |- images/ (Profile picture, project thumbnails, and other visuals)
-  |- README.md (Documentation for the project)
+<p align="center">
+  <img src="src/assets/images/portfolio_icon.png" alt="portfolio-logo" width="120px" height="120px"/>
+  <br>
+  <em>Discover my work, projects, and skills through this modern personal portfolio website built with Angular.</em>
+  <br>
+</p>
 
-Repository Name: Personal Portfolio Website
-Description: A sleek and modern personal portfolio website to showcase projects, skills, and professional background. Built using HTML, CSS, and JavaScript.
+<p align="center">
+  <a href="https://mohdnadim1.github.io/Personal-Portfolio-Website"><strong>View Live Demo</strong></a>
+  <br>
+</p>
 
-Additional Professional Information:
-1. **Purpose:**
-   To create an online presence for professionals, enabling them to display their work, highlight their skills, and connect with potential employers or collaborators.
+<p align="center">
+  <a href="https://github.com/mohdnadim1/Personal-Portfolio-Website/issues">Submit an Issue</a>
+  ·
+  <a href="https://github.com/mohdnadim1">My GitHub Profile</a>
+  <br>
+  <br>
+</p>
 
-2. **Features:**
-   - **About Me Section:** Introduces the individual with a professional summary.
-   - **Projects Section:** Displays a gallery of past projects with links to live demos or GitHub repositories.
-   - **Skills Section:** Highlights technical and professional skills.
-   - **Contact Form:** A simple form for visitors to get in touch via email.
-   - **Responsive Design:** Optimized for desktops, tablets, and mobile devices.
+<p align="center">
+  <a href="https://github.com/mohdnadim1/Personal-Portfolio-Website">
+    <img src="https://img.shields.io/github/stars/mohdnadim1/Personal-Portfolio-Website?style=social" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/mohdnadim1/Personal-Portfolio-Website">
+    <img src="https://img.shields.io/github/forks/mohdnadim1/Personal-Portfolio-Website?style=social" alt="GitHub forks" />
+  </a>
+</p>
 
-3. **Technical Stack:**
-   - **Frontend:** HTML5, CSS3, and JavaScript (Vanilla JS).
-   - **Hosting:** Compatible with platforms like GitHub Pages, Netlify, or Vercel.
+---
 
-4. **Development Process:**
-   - **Phase 1:** Design a clean and modern UI/UX for the portfolio.
-   - **Phase 2:** Implement the static layout using HTML and CSS.
-   - **Phase 3:** Add interactivity with JavaScript, such as smooth scrolling and form validation.
-   - **Phase 4:** Deploy the website and gather feedback.
+## 📚 About
 
-5. **Target Audience:**
-   - Freelancers, job seekers, and professionals looking to showcase their work.
+This repository contains the source code for my personal portfolio website, showcasing:
 
-6. **Future Enhancements:**
-   - Add a blog section for sharing insights and tutorials.
-   - Integration with social media APIs for live updates.
-   - Use a CMS for easier content management.
+- My projects and achievements.
+- Skills and expertise.
+- A contact form for collaboration opportunities.
+- A responsive, modern design built with **Angular**.
 
-7. **License:**
-   This project will be licensed under the MIT License, encouraging open collaboration.
+---
 
-8. **Community Contribution:**
-   Developers can contribute by suggesting design improvements, optimizing code, or adding new features. All contributions should follow the project’s code of conduct.
+## 🔧 Tech Stack
 
-*/
+- **Angular**: Frontend framework for building the application.
+- **TypeScript**: Enhancing JavaScript with strong typing.
+- **CSS/SCSS**: Styling for a sleek and responsive design.
 
-// Example JavaScript for the app (app.js):
+---
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+## 🚀 Getting Started
 
-// Contact form validation
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+### Prerequisites
 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+Ensure you have the following installed:
 
-  if (!name || !email || !message) {
-    alert('Please fill in all fields.');
-    return;
-  }
+- [Node.js](https://nodejs.org/) (with npm included)
+- [Angular CLI](https://angular.dev/tools/cli)
 
-  alert('Message sent successfully!');
-  contactForm.reset();
-});
+### Installation
 
-// Example CSS styles (styles.css):
+1. Clone the repository:
 
-/* Basic styles */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+   ```bash
+   git clone https://github.com/mohdnadim1/Personal-Portfolio-Website.git
+   cd Personal-Portfolio-Website
+   ```
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-}
+2. Install dependencies:
 
-header h1 {
-  margin: 0;
-}
+   ```bash
+   npm install
+   ```
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background: #444;
-  padding: 0.5rem;
-}
+3. Run the application:
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
+   ```bash
+   ng serve
+   ```
 
-nav a:hover {
-  text-decoration: underline;
-}
+4. Open your browser and navigate to `http://localhost:4200`.
 
-section {
-  padding: 2rem;
-}
+---
 
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
+## 📄 Documentation
 
-.contact-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
+Explore these resources to learn more about Angular:
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-}
+- [Angular Documentation](https://angular.dev/overview)
+- [TypeScript Documentation](https://www.typescriptlang.org/)
+- [SCSS Documentation](https://sass-lang.com/documentation)
 
-.contact-form button {
-  background: #333;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-}
+---
 
-.contact-form button:hover {
-  background: #555;
-}
+## 🛠️ Features
 
-/* Example HTML template (index.html): */
+- Fully responsive design optimized for all devices.
+- Dynamic project showcase with animations.
+- Real-time contact form for direct communication.
+- Easy to customize and extend.
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="src/css/styles.css">
-</head>
-<body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+---
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio! I am a passionate developer with skills in web development and design.</p>
-  </section>
+## 📜 Changelog
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Here are some of my recent works:</p>
-    <!-- Add project cards dynamically -->
-  </section>
+Check out the [Changelog](CHANGELOG.md) for the latest updates and fixes.
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form" class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+---
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+## 📝 Contributing
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+Contributions are welcome! If you’d like to improve this portfolio:
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
 
-  <script src="src/js/app.js"></script>
-</body>
-</html>
+---
 
-/* Additional notes for GitHub:
-1. Include a `README.md` file for instructions on setting up and running the project.
-2. Use a `.gitignore` file to exclude unnecessary files from the repository.
-3. Optionally, add a `LICENSE` file for open-source licensing. */
+## 💬 Community
+
+Connect with me and the community:
+
+- [GitHub](https://github.com/mohdnadim1)
+- [Portfolio Live Demo](https://mohdnadim1.github.io/Personal-Portfolio-Website)
+
+---
+
+## ❤️ Support
+
+If you like this project, consider giving it a ⭐️ on GitHub and sharing it with others!
+
+---
+
+**Made with ❤️ by [Mohd Nadim](https://github.com/mohdnadim1).**
+```
+
+### Key Features:
+1. **Centered Presentation**: Similar structure to Angular's but specific to your portfolio website.
+2. **Custom Branding**: Replaced Angular-specific assets and texts with personalized ones.
+3. **Easy Navigation**: Added links to the live demo, GitHub profile, and other resources.
+4. **Beginner-Friendly Setup**: Includes prerequisites and installation steps.
+
+Let me know if you need further adjustments!
